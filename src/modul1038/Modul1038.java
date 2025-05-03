@@ -10,19 +10,27 @@ package modul1038;
  */
 public class Modul1038 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+  
     
-        int data[][] = {{4,6,4,2,8,4,2,10}, {4,6,4,2,8,4,2,10}};
-        for (int a = 0; a < data[0].length; a++) {
-            for (int b = 0; b < data[0].length; b++) {
-            System.out.print(data[a] [b] + " ");
-        }
-            System.out.println("\n");
+    public static void main(String[] args) {
+       
+      int data [][] = {{4,6,4,2,8,4,2,10}, {4,6,4,2,8,4,2,10}};
+      
+      int JumlahElemen = 0; 
+      int TotalElemen = 0; 
+     
+      for (int z = 0; z < data.length; z++){
+      for (int x = 0; x < data[0].length; x++){
+        System.out.print(data[z][x] + " ");
+        JumlahElemen += data [z][x];
+        TotalElemen ++;
+      }      
+          System.out.println("\n");  
+          
     } 
+      double RataRata = (double) JumlahElemen / TotalElemen;
+        System.out.println("Rata rata dari Array diatas adalah\n"+ RataRata);
     
     }
 }
+
